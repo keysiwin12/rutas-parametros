@@ -1,0 +1,28 @@
+<div class="container">
+    <!-- <div class="row pt-5">
+        <div class="col-4">
+            <div class="">
+                <img src="{{detalle.img}}" alt="">
+            </div>
+            <div class="pt-3">
+                <a class="btn btn-danger" [routerLink] = "['/usuarios']" href="">Volver</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <h2>{{detalle.nombre}}</h2>
+            <p>{{detalle.apellido}}</p>
+            <span>{{detalle.correo}}</span>
+        </div>
+    </div> -->
+
+    <div class="card bg-info tex-center" style="width: 18rem;">
+        <img src="{{detalle.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{detalle.nombre}}</h5>
+          <p class="card-text">{{detalle.apellido}}</p>
+          <span>{{detalle.correo}}</span>
+          <br>
+          <a class="btn btn-danger" [routerLink] = "['/usuarios']" href="">Volver</a>
+        </div>
+      </div>
+</div>

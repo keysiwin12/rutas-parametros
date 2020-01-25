@@ -1,0 +1,30 @@
+<div class="m-4">
+    <div class="row">
+        <table class="table table-dark">
+            <thead>
+              <tr class="text-center">
+                <th scope="col">#</th>
+                <th scope="col">nombre</th>
+                <th scope="col">apellido</th>
+                <th scope="col">correo</th>
+                <th scope="col">imagen</th>
+                <th scope="col">descripcion</th>
+                <th scope="col">detalle</th>
+              
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let usuario of usuarios" class="text-center">
+                <td>{{usuario.id}}</td>
+                <td>{{usuario.nombre}}</td>
+                <td>{{usuario.apellido}}</td>
+                <td>{{usuario.correo}}</td>
+                <td><img src="{{usuario.img}}" alt=""></td>
+                <td>{{usuario.bio}}</td>
+                <td><button (click) = "verDetalle(usuario.id)" class="btn btn-md btn-outline-info">Ver</button></td>
+              </tr>
+             
+            </tbody>
+          </table>
+    </div>
+</div>
